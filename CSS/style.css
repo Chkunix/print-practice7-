@@ -28,9 +28,11 @@ header {
 }
 .fixed-contact-button {
     position: fixed;
-    left: 15%;
+    left: 30%;
     bottom: 30px;
     font-size: 30px;
+    background-color: darkolivegreen;
+    border-radius: 20%;
 }
 .container p    {
     position: absolute; 
