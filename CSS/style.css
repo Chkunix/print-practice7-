@@ -1,1 +1,39 @@
-
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 35%;
+    background-color: darkkhaki;
+    z-index: 1000;
+}
+.container {
+    position: relative;
+    width: 50%;
+    height: 350px;
+    overflow: hidden;
+}
+.container::before {
+    content: "";
+    background: darkolivegreen;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;   
+    background-image: url("../Image/images22222.jpg");
+    background-size: cover;
+    background-position: center;
+    display: block;
+}
+.fixed-contact-button {
+    position: fixed;
+    left: 15%;
+    bottom: 30px;
+    font-size: 30px;
+}
+.container p    {
+    position: absolute; 
+    left: 150px; font-size: 25px; 
+    color: #f4f1f1;
+}
