@@ -1,1 +1,149 @@
+﻿header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-color: darkkhaki;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
 
+    header .logo {
+        border-radius: 10%;
+    }
+
+.main-nav li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+}
+
+main {
+    padding-top: 130px;
+}
+.hero {
+    position: relative;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    z-index: 1;
+}
+
+    .hero::before {
+        content: "";
+        background-image: url("../Image/images22222.jpg");
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.5;
+    }
+
+.container {
+    position: relative;
+    width: 50%;
+    height: 350px;
+    overflow: hidden;
+    margin: 50px auto;
+}
+
+    .container::before {
+        content: "";
+        background: darkolivegreen;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../Image/images22222.jpg");
+        background-size: cover;
+        background-position: center;
+        display: block;
+        opacity: 0.6;
+    }
+
+    .container p {
+        position: absolute;
+        left: 150px;
+        font-size: 25px;
+        color: #f4f1f1;
+        top: 100px;
+    }
+
+.gallery {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+}
+
+    .gallery img {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 15px;
+        transition: transform 0.3s;
+    }
+
+        .gallery img:nth-child(1) {
+            top: 20px;
+            left: 40px;
+            z-index: 1;
+        }
+        }
+        .gallery img:nth-child(2) {
+            top: 50px;
+            left: 120px;
+            z-index: 2;
+        }
+
+        .gallery img:nth-child(3) {
+            top: 80px;
+            left: 200px;
+            z-index: 3;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            z-index: 5;
+        }
+
+.fixed-contact-button {
+    position: absolute;
+    left: 30%;
+    bottom: 30px;
+    font-size: 30px;
+    background-color: darkolivegreen;
+    color: white;
+    border: none;
+    border-radius: 20%;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.main-footer {
+    position: relative;
+    background: darkkhaki;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+}
