@@ -19,7 +19,9 @@
 .main-nav li {
     list-style: none;
     display: inline-block;
-    margin-left: 20px;
+    margin-right: 500px;
+color: cornflowerblue
+;font-weight : bold;
 }
 
 .main-nav a {
